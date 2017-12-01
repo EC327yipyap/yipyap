@@ -26,7 +26,7 @@
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/colorPrimaryDark"
         android:onClick="launchFeed"
-        android:text="View puppers!"
+        android:text="@string/puppers"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
