@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "838412329066",
+    "firebase_url": "https://yipyap-44cfc.firebaseio.com",
+    "project_id": "yipyap-44cfc",
+    "storage_bucket": "yipyap-44cfc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838412329066:android:a8b50567a73e143f",
+        "android_client_info": {
+          "package_name": "com.example.android.yipyapnewjava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838412329066-0p9d29ganbn0l465fnpjpm27iio4ir2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4nRG-TTQ7EdT8oahTk3uTVab9R66BqAc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
