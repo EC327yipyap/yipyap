@@ -48,3 +48,5 @@
             android:layout_height="wrap_content"
             android:text="Upload from photo library" />
     </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
