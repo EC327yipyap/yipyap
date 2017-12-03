@@ -18,4 +18,10 @@ public class FeedActivity extends AppCompatActivity {
         Intent i = new Intent(this,MainActivity.class);
         startActivity(i);
     }
+
+    public void launchPost2 (View view)
+    {
+        Intent i = new Intent(this,Post2Activity.class);
+        startActivity(i);
+    }
 }
