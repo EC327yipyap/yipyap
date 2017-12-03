@@ -8,4 +8,6 @@
     <string name="send">Send</string>
     <string name="DogHint">What\' s on your dog\' s mind?</string>
     <string name="fillLater">TODO</string>
+    <string name="settings">Settings</string>
+    <string name="make_post">Make Post</string>
 </resources>
