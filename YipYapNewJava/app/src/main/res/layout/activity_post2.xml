@@ -29,6 +29,7 @@
             style="@style/Widget.AppCompat.Button"
             android:layout_width="105dp"
             android:layout_height="wrap_content"
+            android:onClick="launchFeed"
             android:text="@android:string/cancel" />
 
         <ImageView
