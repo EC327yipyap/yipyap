@@ -6,4 +6,6 @@
     <string name="take_picture">Take picture</string>
     <string name="upload_from_photo_library">Upload from photo library</string>
     <string name="send">Send</string>
+    <string name="DogHint">What\' s on your dog\' s mind?</string>
+    <string name="fillLater">TODO</string>
 </resources>
