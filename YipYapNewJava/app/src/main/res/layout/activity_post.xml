@@ -22,7 +22,7 @@
         <Button
             android:layout_width="105dp"
             android:layout_height="wrap_content"
-            android:text="Send" />
+            android:text="@string/send" />
 
         <Button
             android:id="@+id/button"
@@ -40,13 +40,13 @@
         <Button
             android:layout_width="207dp"
             android:layout_height="wrap_content"
-            android:text="Take picture"
+            android:text="@string/take_picture"
             android:contentDescription="@string/puppy"/>
 
         <Button
             android:layout_width="207dp"
             android:layout_height="wrap_content"
-            android:text="Upload from photo library" />
+            android:text="@string/upload_from_photo_library" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -3,4 +3,7 @@
     <string name="puppy">Puppy</string>
     <string name="puppers">View Puppers</string>
     <string name="temp">Temporary Navigation</string>
+    <string name="take_picture">Take picture</string>
+    <string name="upload_from_photo_library">Upload from photo library</string>
+    <string name="send">Send</string>
 </resources>
