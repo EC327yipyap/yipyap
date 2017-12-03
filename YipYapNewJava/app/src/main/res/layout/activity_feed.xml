@@ -70,38 +70,42 @@
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/puppy1" />
 
-                <!--<RelativeLayout-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="33dp">-->
 
-                    <!--<TextView-->
-                        <!--android:id="@+id/textView2"-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:text="1 hr ago" />-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
 
-                    <!--<TextView-->
-                        <!--android:id="@+id/textView3"-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:layout_toLeftOf="@id/imageButton2"-->
-                        <!--android:text="12" />-->
-
-                    <!--<Space-->
-                        <!--android:layout_width="20dp"-->
-                        <!--android:layout_height="match_parent"-->
-                        <!--android:layout_centerVertical="true"-->
-                        <!--android:layout_toEndOf="@+id/textView3"-->
-                        <!--android:layout_toRightOf="@+id/textView3" />-->
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:text="1hr ago"
+                        android:textSize="20sp" />
 
                     <!--<ImageButton-->
-                        <!--android:id="@+id/imageButton2"-->
-                        <!--android:layout_width="100dp"-->
-                        <!--android:layout_height="match_parent"-->
-                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:id="@+id/imageButton3"-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:layout_toLeftOf="@id/textView4"-->
                         <!--app:srcCompat="@drawable/yikyak" />-->
 
-                <!--</RelativeLayout>-->
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Button" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@id/button4"
+                        android:text="14"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
 
                 <Space
                     android:layout_width="match_parent"
