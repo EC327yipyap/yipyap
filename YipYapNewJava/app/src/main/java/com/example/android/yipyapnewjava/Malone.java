@@ -12,12 +12,14 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 public class Malone extends AppCompatActivity {
-
+    //Variable List
     private ImageButton mSelectImage;
     private EditText    mPostTitle;
     private EditText    mPostDescription;
@@ -27,23 +29,25 @@ public class Malone extends AppCompatActivity {
     private static final int GALLERY_REQUEST = 1;
 
     private StorageReference mStorage;
+    private DatabaseReference mDatabase;
     private ProgressDialog mProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_malone);
-
+        // Firebase Storage and Database access
         mStorage = FirebaseStorage.getInstance().getReference();
-
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Feed");
+        // Connecting the buttons/interactable stuff with objects
         mSelectImage = (ImageButton) findViewById(R.id.imageSelect);
         mPostTitle = (EditText) findViewById(R.id.postTitle);
         mPostDescription = (EditText) findViewById(R.id.postDescription);
         mSubmitButton = (Button) findViewById(R.id.submitButton);
 
-        mProgress = new ProgressDialog(this);
+        mProgress = new ProgressDialog(this); // loading post object
 
-
+        // get stuff from the gallery
         mSelectImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,8 +72,8 @@ public class Malone extends AppCompatActivity {
 
         mProgress.setMessage("Posting puppies soon...");
         mProgress.show();
-        String title_val = mPostTitle.getText().toString().trim();
-        String desc_val = mPostDescription.getText().toString().trim();
+        final String title_val = mPostTitle.getText().toString().trim();
+        final String desc_val = mPostDescription.getText().toString().trim();
 
         if(!TextUtils.isEmpty(title_val) && !TextUtils.isEmpty(desc_val) && mImageUri != null){
 
@@ -80,7 +84,16 @@ public class Malone extends AppCompatActivity {
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
                     Uri downloadUrl = taskSnapshot.getDownloadUrl();
+
+                    DatabaseReference newPost = mDatabase.push();
+
+                    newPost.child("title").setValue(title_val);
+                    newPost.child("description").setValue(desc_val);
+                    newPost.child("image").setValue(downloadUrl.toString());
+
                     mProgress.dismiss();
+
+                    startActivity(new Intent(Malone.this, feed2.class));
                 }
             });
         }
