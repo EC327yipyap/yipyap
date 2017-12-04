@@ -22,10 +22,12 @@
         </activity>
         <activity
             android:name=".FeedActivity"
-            android:label="Puppy Feed"></activity>
+            android:label="Puppy Feed" />
         <activity
             android:name=".Post2Activity"
-            android:label="Post"></activity>
+            android:label="Post" />
+        <activity android:name=".feed2" />
+        <activity android:name=".Malone"></activity>
     </application>
 
 </manifest>

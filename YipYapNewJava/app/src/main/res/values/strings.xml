@@ -10,4 +10,10 @@
     <string name="fillLater">TODO</string>
     <string name="settings">Settings</string>
     <string name="make_post">Make Post</string>
+    <string name="title_activity_feed2">Feed2</string>
+    <string name="add_post">Add Post</string>
+    <string name="puppy_post_title">Puppy Post Title!</string>
+    <string name="pupper_description">Puppy Post Description!</string>
+    <string name="submit_button">Button</string>
+    <string name="submit_butt">Submit Post</string>
 </resources>
