@@ -58,6 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
         android:text="@string/submit_butt"
         android:textColor="?android:attr/colorBackground" />
 </RelativeLayout>
