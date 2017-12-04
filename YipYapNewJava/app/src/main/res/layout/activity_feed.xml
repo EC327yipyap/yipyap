@@ -25,7 +25,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/home"
                 android:layout_width="106dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -33,14 +33,14 @@
                 android:text="Home Page" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/puppers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="           Puppers!" />
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/post"
                 android:layout_width="45dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -63,7 +63,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/puppy1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/puppy"
@@ -73,75 +73,180 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="44dp">
+                    android:layout_height="47dp">
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/time1"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentBottom="true"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
                         android:text="1hr ago"
                         android:textSize="20sp" />
 
-                    <!--<ImageButton-->
-                        <!--android:id="@+id/imageButton3"-->
-                        <!--android:layout_width="30dp"-->
-                        <!--android:layout_height="30dp"-->
-                        <!--android:layout_toLeftOf="@id/textView4"-->
-                        <!--app:srcCompat="@drawable/yikyak" />-->
-
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                    <ImageButton
+                        android:id="@+id/bone1"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
-                        android:text="Button" />
+                        android:layout_centerVertical="true"
+                        android:onClick="launchPost2"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/bone" />
 
                     <TextView
-                        android:id="@+id/textView4"
+                        android:id="@+id/likes1"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_toLeftOf="@id/button4"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/bone1"
+                        android:layout_toStartOf="@+id/bone1"
                         android:text="14"
                         android:textSize="20sp" />
 
                 </RelativeLayout>
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp" />
-
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/puppy2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/puppy"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/puppy4" />
+                    app:srcCompat="@drawable/puppy2" />
 
-                <Space
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp" />
+                    android:layout_height="47dp">
+
+                    <TextView
+                        android:id="@+id/time2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="1hr ago"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/bone2"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:onClick="launchPost2"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/bone" />
+
+                    <TextView
+                        android:id="@+id/likes2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/bone2"
+                        android:layout_toStartOf="@+id/bone2"
+                        android:text="14"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/puppy3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/puppy"
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/puppy3" />
 
-                <Space
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp" />
+                    android:layout_height="47dp">
+
+                    <TextView
+                        android:id="@+id/time3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="1hr ago"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/bone3"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:onClick="launchPost2"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/bone" />
+
+                    <TextView
+                        android:id="@+id/likes3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/bone3"
+                        android:layout_toStartOf="@+id/bone3"
+                        android:text="14"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/puppy4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/puppy"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/puppy2" />
+                    app:srcCompat="@drawable/puppy4" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp">
+
+                    <TextView
+                        android:id="@+id/time4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="1hr ago"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/bone4"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:onClick="launchPost2"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/bone" />
+
+                    <TextView
+                        android:id="@+id/likes4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/bone4"
+                        android:layout_toStartOf="@+id/bone4"
+                        android:text="14"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
 
             </LinearLayout>
         </ScrollView>
