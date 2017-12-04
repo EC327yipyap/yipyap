@@ -26,7 +26,7 @@
 
             <Button
                 android:id="@+id/home"
-                android:layout_width="106dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="launchMain"
@@ -41,8 +41,8 @@
 
             <ImageButton
                 android:id="@+id/post"
-                android:layout_width="45dp"
-                android:layout_height="match_parent"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:layout_weight="1"
                 android:background="@null"
                 android:maxHeight="45dp"
@@ -65,7 +65,7 @@
                 <ImageView
                     android:id="@+id/puppy1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="300dp"
                     android:contentDescription="@string/puppy"
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/puppy1" />
@@ -109,10 +109,14 @@
 
                 </RelativeLayout>
 
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
                 <ImageView
                     android:id="@+id/puppy2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="300dp"
                     android:contentDescription="@string/puppy"
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/puppy2" />
@@ -156,10 +160,14 @@
                 </RelativeLayout>
 
 
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
                 <ImageView
                     android:id="@+id/puppy3"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="300dp"
                     android:contentDescription="@string/puppy"
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/puppy3" />
@@ -202,10 +210,14 @@
 
                 </RelativeLayout>
 
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
                 <ImageView
                     android:id="@+id/puppy4"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="300dp"
                     android:contentDescription="@string/puppy"
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/puppy4" />
@@ -247,6 +259,10 @@
                         android:textSize="20sp" />
 
                 </RelativeLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
 
             </LinearLayout>
         </ScrollView>
