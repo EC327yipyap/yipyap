@@ -26,7 +26,7 @@ public final class MainActivity extends AppCompatActivity {
 
     public void launchFeed (View view)
     {
-        Intent i = new Intent(this, FeedActivity.class);
+        Intent i = new Intent(this, feed2.class);
         startActivity(i);
     }
 
