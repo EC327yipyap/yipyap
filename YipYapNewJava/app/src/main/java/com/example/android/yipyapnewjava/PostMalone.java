@@ -9,7 +9,7 @@ package com.example.android.yipyapnewjava;
 public class PostMalone {
     private String title;
     private String description;
-    private String image ;
+    private String image;
 
     public PostMalone(){}
 

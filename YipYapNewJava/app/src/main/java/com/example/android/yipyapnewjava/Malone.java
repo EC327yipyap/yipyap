@@ -73,11 +73,13 @@ public class Malone extends AppCompatActivity {
     private void startPosting() {
 
         mProgress.setMessage("Posting puppies soon...");
-        mProgress.show();
+
         final String title_val = mPostTitle.getText().toString().trim();
         final String desc_val = mPostDescription.getText().toString().trim();
 
         if(!TextUtils.isEmpty(title_val) && !TextUtils.isEmpty(desc_val) && mImageUri != null){
+
+            mProgress.show(); // if the user has entered something then we show progress bar
 
             StorageReference filePath = mStorage.child("Post_Images").child(mImageUri.getLastPathSegment());
 
@@ -85,6 +87,7 @@ public class Malone extends AppCompatActivity {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
+                    // taking the local data (picture, title, and description)
                     Uri downloadUrl = taskSnapshot.getDownloadUrl();
 
                     DatabaseReference newPost = mDatabase.push();
