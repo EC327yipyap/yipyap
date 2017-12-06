@@ -27,14 +27,14 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/input_outline"
         android:ems="10"
         android:hint="@string/puppy_post_title"
-        tools:layout_marginLeft="10dp"
-        tools:layout_marginRight="10dp"
-        tools:layout_marginTop="10dp"
-        tools:paddingHorizontal="5dp"
-        tools:paddingVertical="5dp" />
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp" />
 
     <EditText
         android:id="@+id/postDescription"

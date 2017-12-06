@@ -36,9 +36,11 @@ public class Malone extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_malone);
+
         // Firebase Storage and Database access
         mStorage = FirebaseStorage.getInstance().getReference();
         mDatabase = FirebaseDatabase.getInstance().getReference().child("Feed");
+
         // Connecting the buttons/interactable stuff with objects
         mSelectImage = (ImageButton) findViewById(R.id.imageSelect);
         mPostTitle = (EditText) findViewById(R.id.postTitle);
@@ -99,6 +101,8 @@ public class Malone extends AppCompatActivity {
         }
 
     }
+
+    // Pulling the image from gallery
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

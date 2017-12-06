@@ -38,23 +38,32 @@ public class feed2 extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        /* this recycle adapter has an ERROR >> FIX!!!
-        FirebaseRecyclerAdapter <PostMalone,PostViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<PostMalone, PostViewHolder>(
+
+        FirebaseRecyclerAdapter<PostMalone, PostViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<PostMalone, PostViewHolder>(
                 PostMalone.class,
                 R.layout.feed_row,
                 PostViewHolder.class,
                 mDatabase
         ) {
-            @Override
-            protected void onBindViewHolder(PostViewHolder holder, int position, PostMalone model) {
-
-            }
 
             @Override
             public PostViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
                 return null;
             }
-        } */
+
+            @Override
+            protected void onBindViewHolder(PostViewHolder holder, int position, PostMalone model) {
+
+            }
+
+
+            protected void populateViewHolder(PostViewHolder viewHolder, PostMalone model, int position){
+
+                viewHolder.setTitle(model.getTitle());
+                viewHolder.setDescription(model.getDescription());
+            }
+          };
+        mFeedList.setAdapter(firebaseRecyclerAdapter);
     }
 
     public static class PostViewHolder extends RecyclerView.ViewHolder {
@@ -64,7 +73,7 @@ public class feed2 extends AppCompatActivity {
         public PostViewHolder(View itemView) {
             super(itemView);
 
-            itemView = mView;
+            mView = itemView;
         }
 
         public void setTitle(String title){

@@ -2,6 +2,8 @@ package com.example.android.yipyapnewjava;
 
 /**
  * Created by Uddin on 12/4/2017.
+ * this is the post class (PostMalone) that I have created
+ * it has setters and getters for the titles, description and pictures
  */
 
 public class PostMalone {
