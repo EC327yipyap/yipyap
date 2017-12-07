@@ -28,7 +28,7 @@ public class feed2 extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
 
-
+    int upVotes = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,19 @@ public class feed2 extends AppCompatActivity {
         mFeedList.setHasFixedSize(true);
         mFeedList.setLayoutManager(new LinearLayoutManager(this));
 
+    }
+
+    public void increment(View view)
+    {
+        upVotes = upVotes + 1;
+        TextView button = (TextView) findViewById(R.id.bone);
+        display(upVotes);
+    }
+
+    public void display(int upVotes)
+    {
+        TextView like = (TextView) findViewById(R.id.likes);
+        like.setText("" + upVotes);
     }
 
 

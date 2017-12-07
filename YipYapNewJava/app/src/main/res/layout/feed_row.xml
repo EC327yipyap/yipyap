@@ -39,10 +39,12 @@
                 android:layout_alignParentRight="true"
                 android:layout_margin="7dp"
                 style="?android:attr/borderlessButtonStyle"
+                android:onClick="increment"
                 android:background="@drawable/bone"/>
 
             <TextView
                 android:layout_width="wrap_content"
+                android:id="@+id/likes"
                 android:layout_height="wrap_content"
                 android:layout_alignBaseline="@+id/bone"
                 android:layout_alignBottom="@+id/bone"
