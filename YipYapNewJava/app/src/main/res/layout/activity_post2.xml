@@ -16,15 +16,36 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/puppy"
+            android:text="@string/take_picture"
+            android:drawable="@drawable/button_selector" android:state_pressed="true"/>
+
+        <Button
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_from_photo_library"
+            android:drawable="@drawable/button_selector" android:state_pressed="true"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:contentDescription="@string/fillLater"
+            app:srcCompat="@drawable/puppy2" />
 
         <Button
             android:layout_width="105dp"
             android:layout_height="wrap_content"
-            android:text="@string/send" />
+            android:text="@string/send"
+            android:drawable="@drawable/button_selector" android:state_pressed="true"/>
 
         <Button
             android:id="@+id/button"
@@ -32,24 +53,9 @@
             android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:onClick="launchFeed"
-            android:text="@android:string/cancel" />
+            android:text="@android:string/cancel"
+            android:drawable="@drawable/button_selector" android:state_pressed="true"/>
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            app:srcCompat="@drawable/puppy2" android:contentDescription="@string/fillLater" />
-
-        <Button
-            android:layout_width="207dp"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/puppy"
-            android:text="@string/take_picture" />
-
-        <Button
-            android:layout_width="207dp"
-            android:layout_height="wrap_content"
-            android:text="@string/upload_from_photo_library" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

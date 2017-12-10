@@ -30,7 +30,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="launchMain"
-                android:text="Home Page" />
+                android:text="Home Page"
+                android:drawable="@drawable/button_selector" android:state_pressed="true"/>
 
             <TextView
                 android:id="@+id/puppers"
