@@ -13,7 +13,7 @@
         <ImageView
             android:id="@+id/post_image"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="350dp"
             tools:adjustViewBounds="true"
             tools:scaleType="centerCrop"
             tools:src="@mipmap/add_btn" />

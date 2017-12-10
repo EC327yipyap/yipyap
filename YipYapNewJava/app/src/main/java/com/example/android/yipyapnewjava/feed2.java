@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -43,18 +44,31 @@ public class feed2 extends AppCompatActivity {
 
     }
 
-    public void increment(View view)
-    {
-        upVotes = upVotes + 1;
-        TextView button = (TextView) findViewById(R.id.bone);
-        display(upVotes);
-    }
+//    public void increment(View view, PostMalone post)
+//    {
+//        int upVotesPublic = post.getUpVotes();
+//        post.setUpVotes(upVotesPublic);
+//        Button butt = (Button) findViewById(R.id.bone);
+//        display(post);
+//    }
+//
+//    public void display(PostMalone post)
+//    {
+//        TextView like = (TextView) findViewById(R.id.likes);
+//        like.setText("" + post.getUpVotes());
+//    }
 
-    public void display(int upVotes)
-    {
-        TextView like = (TextView) findViewById(R.id.likes);
-        like.setText("" + upVotes);
-    }
+        public void increment(View view)
+        {
+            upVotes = upVotes + 1;
+            display(upVotes);
+        }
+
+        public void display(int num)
+        {
+            TextView like = (TextView) findViewById(R.id.likes);
+            like.setText("" + num);
+        }
 
 
     @Override
