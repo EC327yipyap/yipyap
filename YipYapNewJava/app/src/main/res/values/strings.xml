@@ -16,4 +16,5 @@
     <string name="pupper_description">Describe your puppy!</string>
     <string name="submit_button">Button</string>
     <string name="submit_butt">Submit Post</string>
+    <string name="todo">TODO</string>
 </resources>
