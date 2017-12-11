@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/yipyapicon"
     tools:context="com.example.android.yipyapnewjava.MainActivity">
-
+    <!--this code includes the logo and background color-->
     <ImageView
         android:layout_width="4dp"
         android:layout_height="6dp"
@@ -20,7 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/background_color" />
-
+    <!--View puppers button takes user to feed page-->
     <Button
         android:layout_width="180dp"
         android:layout_height="68dp"

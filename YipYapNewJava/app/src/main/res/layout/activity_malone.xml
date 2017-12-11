@@ -57,7 +57,7 @@
         android:inputType="textMultiLine"
         android:paddingHorizontal="5dp"
         android:paddingVertical="5dp" />
-
+<!--submit post button uploads picture and text to the feed page-->
     <Button
         android:id="@+id/submitButton"
         android:layout_width="match_parent"
