@@ -29,7 +29,6 @@ public class feed2 extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
 
-    int upVotes = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,31 +43,6 @@ public class feed2 extends AppCompatActivity {
 
     }
 
-//    public void increment(View view, PostMalone post)
-//    {
-//        int upVotesPublic = post.getUpVotes();
-//        post.setUpVotes(upVotesPublic);
-//        Button butt = (Button) findViewById(R.id.bone);
-//        display(post);
-//    }
-//
-//    public void display(PostMalone post)
-//    {
-//        TextView like = (TextView) findViewById(R.id.likes);
-//        like.setText("" + post.getUpVotes());
-//    }
-
-        public void increment(View view)
-        {
-            upVotes = upVotes + 1;
-            display(upVotes);
-        }
-
-        public void display(int num)
-        {
-            TextView like = (TextView) findViewById(R.id.likes);
-            like.setText("" + num);
-        }
 
 
     @Override
@@ -122,8 +96,25 @@ public class feed2 extends AppCompatActivity {
 
         }
 
-
     }
+
+
+    public void increment(View view)
+    {
+        TextView upNum = (TextView) findViewById(R.id.likes);
+        CharSequence upVotes = upNum.getText();
+        int num = Integer.parseInt(upVotes.toString());
+        num = num + 1;
+        upVotes = String.valueOf(num);
+        display(upVotes, view);
+    }
+
+    public void display(CharSequence num, View view)
+    {
+        TextView like = (TextView) findViewById(R.id.likes);
+        like.setText(num);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -35,8 +35,6 @@ public class Malone extends AppCompatActivity {
     private DatabaseReference mDatabase;
     private ProgressDialog mProgress;
 
-    int upVotes = 0; // like button counter
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -136,4 +134,5 @@ public class Malone extends AppCompatActivity {
             }
         }
     }
+
 }

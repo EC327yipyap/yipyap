@@ -10,7 +10,6 @@ public class PostMalone {
     private String title;
     private String description;
     private String image;
-    private int upVotes;
 
     public PostMalone(){}
 
@@ -18,7 +17,6 @@ public class PostMalone {
         this.title = title;
         this.description = description;
         this.image = image;
-        this.upVotes = 0;
     }
 
     public String getTitle() {
@@ -45,7 +43,4 @@ public class PostMalone {
         this.image = image;
     }
 
-    public int getUpVotes(){ return this.upVotes; }
-
-    public void setUpVotes(int num) { this.upVotes = num; }
 }
